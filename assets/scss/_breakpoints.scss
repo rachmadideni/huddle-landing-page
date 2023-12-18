@@ -1,0 +1,16 @@
+$mobile: 376px;
+$desktop: 1440px;
+
+$breakpoints: (
+  "desktop": (
+    min-width: $desktop,
+  ),
+);
+
+@mixin screen-size($size-name) {
+  @if map-has-key($breakpoints, $size-name) {
+    @media #{inspect(map-get($breakpoints, $size-name))} {
+      @content;
+    }
+  }
+}
