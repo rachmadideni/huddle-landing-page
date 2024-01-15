@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import pluginPurgeCss from "@mojojoejo/vite-plugin-purgecss";
+import htmlPurge from 'vite-plugin-html-purgecss'
 
 export default defineConfig({
     base: '/huddle-landing-page/',
     plugins: [
-        pluginPurgeCss(),
+        htmlPurge(),
     ],
 })

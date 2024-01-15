@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@mojojoejo/vite-plugin-purgecss": "^1.1.0",
     "sass": "^1.69.5",
-    "vite": "^5.0.10"
+    "vite": "^5.0.10",
+    "vite-plugin-html-purgecss": "^0.1.1"
   }
 }
